@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    color: #d1d1d1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #171717;
+}
+
+header .logo h1 {
+    color: #d1d1d1;
+    font-family: 'Intro', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff3c00;
+    font-weight: bold;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* .hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #d1d1d1;
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+
+.nav-toggle.active .hamburger {
+    transform: rotate(45deg);
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: rotate(90deg) translateX(-8px);
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: rotate(90deg) translateX(-8px);
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #171717;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+} */
+
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #171717;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Carousel styles */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}
+
+
+.hero {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Intro', sans-serif;
+    font-size: 2.5em;
+    color: #171717;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #171717;
+}
+
+.portfolio-carousel {
+    padding: 20px;
+}
+
+.portfolio-carousel h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    min-width: 200px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.services {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.5em;
+}
+
+.services p span {
+    font-weight: bold;
+    color: #171717;
+    transition: color 0.3s;
+}
+
+.services p span:hover {
+    color: #ff0000;
+}
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-titles {
+    color: #171717;
+
+}
+
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid  #171717;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.contact-form button:hover {
+    background-color: #ff3c00;
+    color: #171717;
+    font-weight: bold;
+}
+
+footer {
+    background: #171717;
+    color: #d1d1d1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+/* Chunky text styles */
+.chunky-text {
+    font-size: 3rem; 
+    font-weight: bold;
+    line-height: 1.5;
+    color: #d1d1d1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.chunky-text span {
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* .chunky-text span:last-child::after {
+    content: ".";
+} */
+
+.chunky-text span:hover {
+    color: #ff3c00;
+}
