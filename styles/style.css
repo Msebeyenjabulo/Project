@@ -329,3 +329,66 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+main {
+    padding: 20px;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #171717;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.source-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #d1d1d1;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.source-link a {
+    color: #ff3c00;
+    text-decoration: none;
+}
+
+.source-link a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    padding: 20px;
+}
+
+.about-us h2, .about-us h3 {
+    font-family: 'Intro', sans-serif;
+}
+
+.about-us p, .about-us ul {
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.6;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 15px;
+}
