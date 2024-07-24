@@ -15,7 +15,12 @@
         <div class="logo">
             <img loading="lazy" src="images/Crowdly Media Logo-White.png" alt="Crowdly Media logo" width="200">
         </div>
-        <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+          <nav id="menu" class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -23,11 +28,12 @@
                 <li><a href="info.html">Info</a></li>
                 <li><a href="contact.html">Let's Chat</a></li>
             </ul>
-            <button class="hamburger">
+            <!-- <button class="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </button> -->
+            <!-- So the hamburger its self is not sitting in the right place its sitting more to the centre of the header and I'de like to the right side. Also when I press the header I still get the same issue of the home nav only showing and it being at the other end of the header -->
         </nav>
     </header>    
 
@@ -35,14 +41,20 @@
         <img loading="lazy" src="images/Hero-Home-Dark.png" alt="Stand out from the crowd with Crowdly">
     </section>
 
-    <section class="services-details">
-        <h2>Branding</h2>
-        <p>We create memorable brands that stand out in the market.</p>
-        <h2>Web Design</h2>
-        <p>Our team designs stunning and responsive websites.</p>
-        <h2>Social Media Management</h2>
-        <p>Let us handle your social media presence and engage your audience.</p>
-    </section>
+    <div class="work-section">
+        <div class="work-container">
+            <img src="images/pasta-branding.jpg" alt="Pasta Branding">
+            <img src="images/pure-organic.jpg" alt="Pure Organics Cosmetics">
+            <img src="images/skin-care-ad.jpg" alt="Skin Care Brand Ad posts">
+            <img src="images/single-cookie-ad.jpg" alt="Burger Revelation Social Media Ad post">
+            <img src="images/recovery-oil-ad.jpg" alt="">
+            <img src="images/tea-and-toast.jpg" alt="Social Media Ad graphic for yoga brand">
+
+        </div>
+        <div class="credits">
+            <p>Graphics by <a href="https://source1.com">Source 1</a>, <a href="https://source2.com">Source 2</a>, <a href="https://source3.com">Source 3</a>, etc.</p>
+        </div>
+    </div>
 
     <section id="services">
         <h2 class="center-title">Our Services:</h2>
@@ -50,12 +62,11 @@
                 Business Set Up, Branding, Graphic Design, Content Marketing, Content Creation, SEO, Web Development, Copywriting, Social Media Management
             </p>
     </section>
+
     
-    <section class="hero">
-        <h1>Let's Chat</h1>
-        <p class="form-titles">We'd love to hear from you.</p>
-    </section>
     <section class="contact-form">
+        <h1 class="form-titles">Let's Chat</h1>
+        <p class="form-titles">We'd love to hear from you.</p>
         <h2 class="form-titles">Contact Us</h2>
         <form class="form-titles">
             <label for="name">Name:</label>
@@ -68,6 +79,11 @@
         </form>
     </section>
     <footer>
+    </div>
+    <div class="credits">
+        <p>Graphics by <a href="https://pin.it/2Uy86gFBZ">Source 1</a>, <a href="https://pin.it/g4FOBytx5">Source 2</a>, <a href="https://pin.it/1fkarMDFi">Source 3</a>, <a href="https://pin.it/3ILqTCQf7">Source 4</a>, <a href="https://pin.it/1fkarMDFi">Source 5</a>, <a href="https://pin.it/4GcHmVC0T">Source 6</a> </p>
+    </div>
+</div>
         <p>&copy; 2024 Crowdly Media. All rights reserved.</p>
     </footer>
 

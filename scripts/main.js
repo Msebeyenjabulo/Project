@@ -83,13 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Hamburger Menu
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('nav ul'); // Updated selector
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav ul');
 
-    hamburger.addEventListener('click', function () {
-        navLinks.classList.toggle('show');
-    });
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    hamburger.classList.toggle('active'); // Optional: for styling the active state
 });
 
 
